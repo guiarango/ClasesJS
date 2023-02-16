@@ -35,3 +35,7 @@ if (usuarioEdad >= 18 && tieneBuenaVision === true) {
 } else {
   console.log("No entregar licencia");
 }
+
+// usuarioEdad >= 18
+//   ? console.log("Entregar licencia")
+//   : console.log("No entregar licencia");
