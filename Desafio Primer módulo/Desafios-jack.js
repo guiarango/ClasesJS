@@ -36,12 +36,7 @@
 
 // 3)Crear una funcion llamada "numeroMayor" en todas sus versiones (declarada, expresada y arrow function) que tome dos parametros como funcion y retorne el mayor valor de los dos (En caso de empate traera cualquiera de los dos)
 
-// var num1=prompt("Ingresa el primer numero: ");
-// var num2=prompt("Ingresa el segundo numero: ");
 
-// function numeroMayor (num1, num2){
-       
-// }
 
 
 
