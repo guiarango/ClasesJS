@@ -37,7 +37,41 @@
 // 3)Crear una funcion llamada "numeroMayor" en todas sus versiones (declarada, expresada y arrow function) que tome dos parametros como funcion y retorne el mayor valor de los dos (En caso de empate traera cualquiera de los dos)
 
 
+// function numeroMayor(a, b) {
 
+//     if (a > b){
+//         console.log (a)
+//     }
+//     else{
+//         console.log(b)
+//     }
+    
+// };
+
+// numeroMayor(5,5);
+
+// ------------------------
+
+// let numeroMayor = function (a , b){    
+//     if (a > b){
+//     console.log (a)
+//     }
+//     else{
+//         console.log(b)
+//     }
+
+// }
+
+// numeroMayor( 2, 5)
+
+
+// -----------------------
+
+// const numeroMayor = (a,b) => {
+//     console.log(Math.max(a,b));
+// };      
+
+// numeroMayor(6,6);
 
 
 // ----------CUARTO EJERCICIO ------------
