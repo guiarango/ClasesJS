@@ -1,0 +1,12 @@
+.claseDiv {
+  width: 100%;
+}
+.claseLi {
+  width: 300px;
+  margin: 30px;
+  list-style: none;
+  background-color: red;
+}
+.claseImg {
+  width: 100%;
+}
