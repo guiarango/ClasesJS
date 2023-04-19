@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* --------------HEADER-------------- */
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.mobile-nav {
+  background-color: #384044;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  letter-spacing: 2;
+}
+
+#sideNav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: #384044;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 50px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#menuBtn {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#menuBtn img {
+  width: 20px;
+  margin-top: 15px;
+}
+
+.icon-container-whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  margin: 0rem 0.5rem;
+}
+
+.fa-whatsapp-square {
+  color: #25d366;
+  font-size: 40px;
+  z-index: 100;
+}
+
+/* --------------MAIN-------------- */
+
+main {
+  min-height: 80vh;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  min-height: 350px;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-nombre,
+.product-precio {
+  width: 100%;
+  margin: 0;
+}
+
+.addToCart {
+  width: 100%;
+  background-color: #384044;
+  color: white;
+  padding: 10px;
+}
+
+/* --------------FOOTER-------------- */
+
+footer {
+  background-color: #384044;
+  text-align: center;
+  padding: 30px 0;
+  color: white;
+}
+footer ul {
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
+}
+
+footer ul li {
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer div {
+  width: 100%;
+  margin: 5px 0;
+}
+
+footer div img {
+  height: 50px;
+}
+
+footer p {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.footer-section__socialMedia {
+  padding-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-section__socialMedia p {
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+}
+
+.footer-section__socialMedia--icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0 30px;
+  font-size: 40px;
+}
+
+/* Colores redes sociales */
+.footer-section__socialMedia--icons .fa-facebook-square {
+  color: #4267b2;
+}
+.footer-section__socialMedia--icons .fa-instagram-square {
+  color: #e1306c;
+}
+.footer-section__socialMedia--icons .fa-whatsapp-square {
+  color: #e1306c;
+}
+
+@media (min-width: 600px) {
+  .icon-container-whatsapp {
+    right: 30px;
+    bottom: 30px;
+  }
+
+  .fa-whatsapp-square {
+    font-size: 50px;
+  }
+
+  main {
+    padding: 30px;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .desktop-nav {
+    display: block;
+  }
+
+  .desktop-nav ul {
+    margin-block-start: 0;
+    background-color: #384044;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px 20px 20px;
+    letter-spacing: 2;
+    text-align: center;
+  }
+
+  .desktop-nav ul li {
+    position: relative;
+  }
+
+  .desktop-nav ul li::after {
+    margin-top: 10px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 4px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .desktop-nav ul li:hover:after {
+    width: 100%;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0px 0px;
+    width: 20%;
+  }
+
+  .logo img {
+    height: 100px;
+  }
+  .mobile-nav {
+    display: none;
+  }
+
+  .icon-container-whatsapp {
+    right: 40px;
+    bottom: 40px;
+  }
+
+  .product {
+    width: 21%;
+  }
+
+  .fa-whatsapp-square {
+    font-size: 60px;
+  }
+
+  footer {
+    display: flex;
+    padding: 30px 50px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer p {
+    width: 100%;
+  }
+  .footer-section__socialMedia {
+    padding-top: 0;
+    width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    justify-content: space-evenly;
+  }
+  .product {
+    width: 15%;
+    margin-right: 50px;
+  }
+}
